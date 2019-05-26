@@ -1,0 +1,46 @@
+.header{
+   text-align:center;
+}
+.header span {
+    margin: 0 auto; 
+    display:inline-block;
+    width:150px;
+    margin-bottom:25px;
+    
+}
+.header  button {
+    background-color:white;
+    
+} 
+.disable
+{
+    color:#999 ;
+    
+}
+.flex {
+    margin:0 auto;
+    width:420px;
+    height: 200px;
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.red
+{
+    color:red;
+}
+.flex > div{
+    width: 60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.today {
+    background-color:yellow;
+  
+  }
+  .bold{
+      font-weight:bold;
+  }

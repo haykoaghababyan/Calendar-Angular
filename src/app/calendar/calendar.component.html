@@ -1,0 +1,11 @@
+<div class='header'>
+  <button (click) = "backMounth()"> < </button>
+  <span>
+    {{dataObject.format('MMMM')}} {{dataObject.format('Y')}}
+  </span>
+  <button (click) = "goMounth()"> > </button>
+</div>
+<div class='flex'>
+<div *ngFor="let item of dayNames" class='bold'>{{item}}</div>
+<div *ngFor="let item of mounthArray" [ngClass]="{disable: !isSelectedMonth(item.mDate), red: isRedDay(item.mDate) && isSelectedMonth(item.mDate),  today: item.today}">{{item.mDate.date()}}</div>
+</div>
